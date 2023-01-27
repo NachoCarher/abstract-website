@@ -8,7 +8,7 @@ header {
     border: 1px solid black;
     display: flex;
     background-color: black;
-    color: white;
+    color: #fff;
     height: 88px;
     font-family: GT America Standard, sans-serif;
 }
@@ -21,6 +21,10 @@ header {
     font-size: 17px;
     padding: 0 30px;
     margin: 0 45px;
+    justify-content: space-between;
+    max-width: 1900px;
+    margin: auto;
+    width: 90%;
 }
 
 .nav-left {
@@ -35,7 +39,7 @@ header {
 }
 
 .nav-logo img{
-    background-color: white;
+    background-color: #fff;
     width: 32px;
     border-radius: 25%;
     padding: 3px;
@@ -52,7 +56,6 @@ header {
     align-items: center;
     font-size: 24px;
     font-weight: 400;
-    border-left: 2px solid white;
     letter-spacing: -.5px;
     padding-left: 0.8rem;
     border-left: 2px solid #fff;
@@ -64,3 +67,43 @@ header {
 .nav-help:hover {
     text-decoration: underline;
 }
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    font-size: 24px;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.nav-submit {
+    background-color: #191a1b;
+    border: 1px solid white;
+    padding: 6px 22px;
+}
+
+.nav-signin {
+    background-color: #4C5FD5;
+    border-color: #4C5FD5;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+.nav-signin:hover {
+    background-color: #fff;
+    color: #000000;
+    border-color: #fff;
+}
+
+
