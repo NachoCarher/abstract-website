@@ -124,7 +124,7 @@ header {
 .hero-search {
     display: grid;
     grid-template-columns: 2fr 0.25fr;
-    width: 50%;
+    width: 40%;
     height: auto;
     border: 1px solid #000;
 }
@@ -162,4 +162,72 @@ header {
 
 .hero-search button:hover .arrow-svg {
     fill: #4C5FD5;
+}
+
+.hero-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 0px 30px;
+    margin-top: 10rem;
+    justify-items: end;
+}
+
+.hero-articles > *:nth-child(odd) {
+    justify-self: end;
+}
+
+.hero-articles > *:nth-child(even) {
+    justify-self: start;
+}
+
+.hero-article {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.hero-image img {
+    width: 94px;
+    height: 94px;
+}
+
+.hero-article-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero-article-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.hero-article-description {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hero-article-link {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #4C5FD5;
+}
+
+.hero-article-link:hover {
+    text-decoration: underline;
 }
